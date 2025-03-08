@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+   const div = document.createElement('div')
+    console.log(div);
+    div.className= "main"
+    div.id= Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor= "green"
+    div.style.paddding ="12px"
+    // div.innerText = "abhishek shukla"      // we usually don't use innerText as it takes and overwrites the earlier content 
+   const addText = document.createTextNode("abhishek shukla")
+   div.appendChild(addText)       // to add element to the div
+   document.body.appendChild(div)  //the add text inside the div in the document
+</script>
+</html>
